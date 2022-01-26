@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ***COMMON CSS */
+.fixd-width{
+    width: 1200px;
+    margin: auto;
+}
+.text-end{
+    text-align: right;
+}
+.text-strat{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+   
+}
+.right{
+    float: right;
+}
+/* ****HEADER PART START*** */
+.header {
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+}
+.logo-part {
+    width: 30%;
+}
+.logo-part img {
+    width: 80px;
+}
+
+.menu-part {
+    width: 70%;
+    margin: auto;
+}
+.menu-part ul li {
+    display: inline-block;
+}
+.menu-part ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.menu-part ul li a:hover {
+    color: rgb(98, 120, 223);
+}
+
+
+.menu-part ul li {
+    position: relative;
+}
+.menu-part ul li ul {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    padding: 10px;
+}
+
+
+/* ****BANNER PRAT STRAT**** */
+
+.banner {
+    text-align: center;
+    background: url("./img2/banner\ img.jpg") center center / cover no-repeat;
+    padding: 220px;
+    position: relative;
+    z-index: 1;
+    margin-top: 64px;
+  }
+  .banner::after {
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+  .banner h2 {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 25px;
+  }
+  .banner h1 {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 60px;
+  }
+  .defult {
+    font-size: 21px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    margin-right: 27px;
+    border-radius: 10px;
+    color: rgb(125, 125, 125);
+    transition: all 0.4s ease 0s;
+  
+  }
+  .defult:hover {
+    background-color:#dda33b;
+    color: rgb(255, 255, 255);
+  
+  }
+  
+/* ****BANNER PRAT END**** */
+/* ***** SERVICE SECTION STRAT*** */
+.service-section {
+    padding: 30px 0px;
+}
+.service-title h1 {
+    font-size: 43px;
+    font-weight: 400;
+}
+.service-title h3 {
+    color: rgb(166, 159, 140);
+    font-size: 22px;
+    margin-top: 36px;
+    margin-bottom: 47px;
+}
+/* ***** SERVICE SECTION END */
+/* ***PRIZE SECTIONN STRAT */
+.prize-section {
+    background-color: rgb(247, 249, 255);
+    padding: 20px 0px;
+    color: #a6a29e;
+}
+.prize-box:hover .ab{
+    background-color: #ddd;
+}
+.prize-box {
+    width: 31.3%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+}
+.prize-box:nth-child(3){
+    margin-right: 0;
+}
+.p-header {
+    padding: 22px 0px;
+    border-bottom: 1px solid #ddd;
+    transition: .4s;
+}
+.p-header h3 {
+    font-size: 25px;
+    margin-left: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.p-header h1 {
+    margin-left: 26px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.p-header span {
+    font-size: 21px;
+    font-weight: 400;
+}
+.p-header h5 {
+    margin-left: 26px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.p-header p {
+    margin-left: 26px;
+    font-size: 21px;
+    color: rgb(118, 118, 118);
+    margin-top: 27px;
+}
+.p-content {
+    padding: 39px 0;
+    margin-left: 26px;
+}
+
+.p-content ul li {
+    list-style: none;
+    font-size: 21px;
+    color: #767676;
+    font-weight: 300;
+    margin: 28px 0;
+}
+.p-content ul li span {
+    width: 35px;
+    display: inline-block;
+    color: #dda33b;
+    font-size: 27px;
+}
+.p-button {
+}
+.p-button a {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+    margin-bottom: 32px;
+    width: 172px;
+    transition: .4s;
+}
+.prize-box:hover .p-header{
+    background-color: #dda33b;
+    color: #fff;
+}
+.prize-box:hover .p-button a{
+    background-color:#dda33b ;
+    color: #fff;
+}
+/* **** PRIZE SECTION END */
+/* ****TEAM SECTION STRAT*** */
+
+.team {
+    padding: 60px 0;
+
+}
+.service-title h1 {
+    font-size: 41px;
+    font-weight: 400;
+    margin: 60px 0;
+}
+
+.meamber{
+    width: 22.5%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+       border: 1px double #eeb685;
+    
+}
+.meamber:nth-child(4){
+    margin-right: 0;
+}
+.meamber-img {padding: 30px 0;border-radius: 10px;
+    position: relative;
+    bottom: 29px;
+  
+}
+.meamber-img img{width: 100%;border-radius: 10px 10px 0px 0;
+   
+}
+
+.meamber-bio h4{
+    font-size: 23px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.meamber-bio p {
+    margin-bottom: 21px;
+    color: #c5bac5;
+}
+/* ****TEAM SECTION END*** */
+/* ***NEWS SECTION STRAT** */
+
+.new-section{
+    padding: 42px 0;
+    background: #f7f9ff;
+}
+
+ .deafult{
+    padding: 18px;
+    width: 450px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+ .deafult:focus{
+     outline: none;
+    border: 1px solid #6278df;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+}
+.btn {
+    display: inline-block;
+    padding: 15px;
+    width: 190px;
+    position: relative;
+    bottom: 2px;
+    margin-left: 18px;
+    font-size: 20px;
+    border-radius: 6px;
+    background: #aa972c;
+    color: #fff;
+    font-weight: 400;
+    transition: .5s;
+    border: none;
+
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    background-color: #fff;
+    color:#aa972c;
+    border: 2px solid #aa972c ;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+
+}
+.btn{
+    display: block;
+    margin: auto;
+    width: 220px;
+    margin-top: 20px;
+}
+
+/* ***NEWS SECTION END** */
+/* ****COSE SECTION STRAT */
+.cose{
+    padding: 20px 0;
+}
+.c-header{
+    padding: 18px 0;
+}
+.c-header h1{
+    font-size: 49px;
+    text-align: center;
+    margin: 27px 0;
+    font-weight: 500;
+}
+.c-bottom{}
+.c-img{
+    float: left;
+}
+.c-content{float: right;width: 51%;}
+.c-content h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 34px 0;
+}
+.c-content p{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: #7d806a;
+}
+/* ****COSE SECTION END */
+/* TESTIMONIAL SECTION STRAT */
+.testimonil {
+    background-color: rgb(194 196 203 / 64%);
+    margin-top: 241px;
+    padding: 25px 0px;
+}
+.testimonials{
+    width: 31%;
+    border: 1px solid rgba(0, 0, 0, 0.705);
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+.tes-title{
+    padding: 10px 0;
+}
+.tes-header{color: #767676;padding: 32px 0;background-color: #ffffff;font-size: 20px;line-height: 33px;padding: 45px 0;margin-bottom: 37px;
+position: relative;
+}
+.tes-header p{
+    margin-left: 10px;
+}
+.tes-header::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #fff transparent transparent transparent;
+}
+.tes-img{}
+.tes-img img{
+  border: 8px solid #aa972c;
+    width: 80px;
+    float: left;
+    margin-right: 28px;
+}
+.tes-img-container{
+    line-height: 4px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.tes-img-container h4{
+    line-height: 63px;
+    font-weight: 400;
+}
+
+.tes-img-container p{font-weight: 200;}
+.tes-header p::before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 60px;
+    /* color: #f0f0f0; */
+    position: absolute;
+    opacity: 0.2;
+    top: 40px;
+    left: 14px;
+}
+
+/* TESTIMONIAL SECTION END */
+/* *** FROM CONTACT STRAT*** */
+.form-contact{
+    
+}
+.contact-header h4{
+    font-size: 27px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.contact-header p{
+    margin: 21px 0;
+    font-size: 20px;
+    color: #767676;
+}
+
+.email{
+    display: block;
+    width: 943px;
+    margin: 27px 0;
+}
+.name{
+    /* width: 48%; */
+    /* float: left; */
+}
+.phone{
+    margin-left: 23px;
+    margin-bottom: 22px;
+}
+.massege{
+    display: block;
+    width: 980px;
+    height: 81px;
+}
+
+.contact-header-form .btn{
+    width: 600px;
+    margin-left: 0;
+}
+.btn-footer {
+    width: 174px!important;
+    /* text-align: center; */
+    position: relative;
+    left: 422px;
+    margin: 28px 0;
+}
+.footer {
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* *** FROM CONTACT END*** */
